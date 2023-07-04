@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="channelHeader" id="header"></div>
+    <main>
+        <div class="leftBar" id="leftBar"></div>
+        <div class="content">
+            <div class="channelInfo" id="channelInfo"></div>
+            <div class="chanelLineContent" id="chanelMargaretContent"></div>
+        </div>
+    </main>
+    <div class="footer" id="footer"></div>
+</div>
+</body>
+</html>
+<script src="scripts/jquery-3.4.1.js"></script>
+<script>
+    $(function(){
+        $("#leftBar").load("html/leftBar.html");
+    });
+    $(function(){
+        $("#header").load("html/channelHeader.html");
+    });
+    $(function(){
+        $("#channelInfo").load("html/channelInfo.html");
+    });
+    $(function(){
+        $("#chanelMargaretContent").load("html/ChanelMargaretContent.html");
+    });
+    $(function(){
+        $("#footer").load("html/footer.html");
+    });
+</script>

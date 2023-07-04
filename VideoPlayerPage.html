@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Youtube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class=header id="header"></div>
+  <main style="overflow-y: unset; overflow-x: hidden; padding-left: 10px">
+    <div class="playerContent">
+        <div class="videoPlayer" id="videoPlayer"></div>
+        <div class="nextVideos" id="nextVideos"></div>
+    </div>
+  </main>
+  <div class="footer" id="footer"></div>
+</div>
+</body>
+</html>
+<script src="scripts/jquery-3.4.1.js"></script>
+<script>
+  $(function(){
+    $("#header").load("html/header.html");
+  });
+  $(function(){
+    $("#videoPlayer").load("html/videoPlayer.html");
+  });
+  $(function(){
+    $("#nextVideos").load("html/nextVideos.html");
+  });
+  $(function(){
+    $("#footer").load("html/footer.html");
+  });
+</script>
