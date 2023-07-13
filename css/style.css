@@ -976,6 +976,9 @@ main {
     .search-input {
         width: 430px;
     }
+    .mainChannelInfo .recommendedChannels {
+        display: none;
+    }
     .recommendedLineContent .arrows,
     .chanelLineContent .arrows{
         right: -44vw;
@@ -984,11 +987,24 @@ main {
         right: -12vw;
     }
     .foodDrinkLineContent .subscribe{
-        right: -11vw;
+        right: unset;
 
     }
     .leftBar {
         margin-left: 0px;
+    }
+    .mainChannelInfo .leftMainInfo .videoChannel img {
+        width: 35vw;
+        margin-right: 20px;
+    }
+    .videoPlayer .description .descriptionText, .mainChannelInfo .leftMainInfo .videoChannel .description {
+        font-size: 14px;
+    }
+    .videoPlayer .description .descriptionText, .mainChannelInfo .leftMainInfo .videoChannel .header {
+        font-size: 20px;
+    }
+    .mainChannelInfo .leftMainInfo {
+        width: 900px;
     }
 }
 
@@ -1006,10 +1022,48 @@ main {
     }
     .header .search-icon,
     .channelHeader .search-icon{
-        left:30vw;
+        right: -10px;
+    }
+    .foodDrinkLineContent .recommendForYou{
+        display: none;
+    }
+    .mainChannelInfo .leftMainInfo .menuChannel {
+        width: 650px;
+        font-size: 15px;
     }
 
+    .channelInfo .Cover{
+        width: 107vw;
+        border-radius:0;
+        display: flex;
+        position: relative;
+        top: -20px;
+        left: -55px;
+    }
+    .mainChannelInfo .leftMainInfo {
+        width: 680px;
+    }
+    .content{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 720px){
+    .foodDrinkLineContent .subscribe,
+    .recommendedLineContent .arrows,
+    .foodDrinkLineContent .arrows,
+    .mainChannelInfo,
+    .chanelLineContent .arrows {
+        display: none;
+    }
 
+    .channelInfo .headerInfo{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: 20px;
+        margin-bottom: 100px;
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1045,7 +1099,11 @@ main {
         left:19px;
     }
 
-
+    .content{
+        margin-right: auto;
+        margin-left: auto;
+        gap: 10px;
+    }
 
     .channelHeader .Logo{
         width: 37px;
@@ -1082,11 +1140,7 @@ main {
         overflow-y: scroll;
     }
 
-    .content{
-        margin-right: auto;
-        margin-left: auto;
-        gap: 10px;
-    }
+
 
     .footer{
         display: flex;
@@ -1126,6 +1180,8 @@ main {
         position: relative;
         flex-direction: column;
         height: 20px;
+        margin-bottom: unset;
+        gap: unset;
     }
 
     .channelInfo .headerInfo .subHeaderInfo img{
