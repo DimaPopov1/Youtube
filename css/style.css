@@ -717,20 +717,26 @@ main {
     margin-left: 32px;
 
 }
-
+.videoPlayer{
+    width: 70vw;
+    max-width: 1363px;
+}
 .videoPlayer .video{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 1363px;
+    width:70vw;
+    max-width: 1363px;
     height: 700px;
     flex-shrink: 0;
     border-radius: 14px;
     background: url("../images/player/Cover (17).png"), lightgray 50% / cover no-repeat;
 }
 .videoPlayer .video .progress{
-    position: relative;    top: 612px;
-    width: 1297px;
+    position: relative;
+    top: 612px;
+    width: 67vw;
+    max-width: 1297px;
     height: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -742,7 +748,8 @@ main {
 .videoPlayer .video .progress .currentProgress{
     display: flex;
     position: relative;
-    width: 280px;
+    width: 20vw;
+    max-width: 280px;
     height: 10px;
     flex-shrink: 0;
     border-radius: 5px;
@@ -787,7 +794,8 @@ main {
 .videoPlayer .statistics{
     display: flex;
     position: relative;
-    width: 1363px;;
+    width: 70vw;
+    max-width: 1363px;
     flex-direction: column;
     margin-top: 10px;
     color: #192646;
@@ -808,7 +816,8 @@ main {
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    width: 1363px;
+    width: 70vw;
+    max-width: 1363px;
 }
 
 .videoPlayer .statistics .additionalStatistic .views{
@@ -901,7 +910,7 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    left: 456px;
+    right:  -10vw;
 
 }
 
@@ -971,6 +980,10 @@ main {
     font-family: 'Mulish', sans-serif;
     font-weight: lighter;
 }
+.rightHandlerBar{
+    position: relative;
+    left: calc( 70vw - 530px);
+}
 
 @media screen and (max-width: 1500px) {
     .search-input {
@@ -997,6 +1010,8 @@ main {
         width: 35vw;
         margin-right: 20px;
     }
+
+
     .videoPlayer .description .descriptionText, .mainChannelInfo .leftMainInfo .videoChannel .description {
         font-size: 14px;
     }
@@ -1005,6 +1020,37 @@ main {
     }
     .mainChannelInfo .leftMainInfo {
         width: 900px;
+    }
+    .videoPlayer{
+        width: 92vw;
+    }
+    .videoPlayer .video{
+        width:92vw;
+        height: 46vw;
+    }
+    .nextVideos{
+        display: none;
+    }
+    .videoPlayer .video .progress{
+        width: 90vw;
+    }
+
+    .videoPlayer .video .progress .currentProgress{
+        width: 30vw;
+
+    }
+    .rightHandlerBar{
+        position: relative;
+        left: calc( 88vw - 480px);
+    }
+    .videoPlayer .video .time {
+        top: calc( 45vw - 120px);
+    }
+    .videoPlayer .video .progress {
+        top: calc( 45vw - 70px);
+    }
+    .videoPlayer .video .handlerBar {
+        top: calc(45vw - 55px);
     }
 }
 
@@ -1046,6 +1092,19 @@ main {
     .content{
         margin-left: 10px;
     }
+    .videoPlayer .description .subscribe {
+        right: 270px;
+    }
+    .usualText {
+        font-size: 14px;
+    }
+    .videoPlayer .description .descriptionText {
+        width: 54vw;
+    }
+    .playerContent {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 @media screen and (max-width: 720px){
     .foodDrinkLineContent .subscribe,
@@ -1064,6 +1123,61 @@ main {
         margin-bottom: 100px;
         gap: 20px;
     }
+
+    .videoPlayer{
+        width: 84vw;
+    }
+    .videoPlayer .video{
+        width:84vw;
+        height: 43vw;
+    }
+    .videoPlayer .video .time {
+        font-size: 15px;
+    }
+    .videoPlayer .video .progress {
+        height: 5px;
+        width: 80vw;
+        top: calc( 45vw - 80px);
+    }
+    .videoPlayer .video .progress .currentProgress {
+        height: 5px;
+        width: 25vw;
+    }
+    .videoPlayer .video .handlerBar{
+        gap: 10px;
+        top: calc(45vw - 70px);
+        left: 19px;
+    }
+    .videoPlayer .video .handlerBar .rightHandlerBar{
+        gap: 10px;
+        left: calc( 88vw - 320px);
+    }
+    .videoPlayer .video .handlerBar .rightHandlerBar img{
+        margin-right: 10px;
+    }
+    .videoPlayer .video .handlerBar img{
+        height: 14px;
+    }
+    .videoPlayer .statistics {
+        font-size: 26px;
+    }
+
+    .videoPlayer .statistics .additionalStatistic .likes img{
+        display: none;
+    }
+    .videoPlayer .statistics .additionalStatistic .likes div{
+        width: 70px;
+        height: 26px;
+    }
+    .videoPlayer .statistics .additionalStatistic .likes,
+    .videoPlayer .statistics .additionalStatistic .views{
+        font-size: 12px;
+    }
+    .videoPlayer .description .subscribe {
+        display: none;
+    }
+
+
 }
 
 @media screen and (max-width: 360px) {
@@ -1080,6 +1194,7 @@ main {
 
     }
     .channelHeader .headerMenu,
+    .videoPlayer .video .handlerBar,
     .header .headerMenu{
         display: none;
     }
@@ -1236,7 +1351,7 @@ main {
     }
 
     .videoPlayer{
-    width: 288px;
+        width: 288px;
     }
 
     .videoPlayer .video .progress{
@@ -1324,6 +1439,7 @@ main {
         gap: 10px;
     }
     .nextVideos{
+        display: flex;
         width: 288px;
         height: 899px   ;
         margin: 0;
