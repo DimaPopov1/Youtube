@@ -921,7 +921,7 @@ main {
     display: flex;
     position: relative;
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 70px;
     width: 367px;
     height: 1085px;
     flex-shrink: 0;
@@ -1024,6 +1024,34 @@ main {
     .mainChannelInfo .leftMainInfo {
         width: 900px;
     }
+
+    .playerContent{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .playerContent .nextVideos {
+        width: 93vw;
+        height: 376px;
+    }
+    .playerContent .nextVideos .tape{
+        display: flex;
+        flex-direction: row;
+        width: unset;
+        gap:40px;
+        border-radius: 14px;
+        margin-top: 30px;
+        color: #19202C;
+        font-size: 16px;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 700;
+        overflow: auto;
+        background-size: contain;
+    }
+    .nextVideos .firstLine {
+        align-items: end;
+        margin-bottom: unset;
+        font-size: 25px;
+    }
     .videoPlayer{
         width: 92vw;
     }
@@ -1031,8 +1059,7 @@ main {
         width:92vw;
         height: 46vw;
     }
-    .nextVideos{
-        display: none;
+    .nextVideos{margin-left:unset;
     }
     .videoPlayer .video .progress{
         width: 90vw;
@@ -1185,7 +1212,15 @@ main {
         display: none;
     }
 
+    .nextVideos {
 
+    }
+    .videoPlayer .description .usualText{
+        display: none;
+    }
+    .videoPlayer .description {
+        height: 60px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1360,7 +1395,9 @@ main {
     }
 
     .videoPlayer{
-        width: 288px;
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(90vw - 20px);
     }
 
     .videoPlayer .video .progress{
@@ -1466,6 +1503,20 @@ main {
     .nextVideos .tape{
         width: 288px;
     }
+    .playerContent {
+        margin-right: auto;
+        margin-left: auto;
+        gap: 20px;
+    }
+    .playerContent .nextVideos{
+        width: 288px;
+        height: 72%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .playerContent .nextVideos .tape {
+        flex-direction: column;
+    }
     .nextVideos .firstLine{
         width: 288px;
         height: 26px;
@@ -1486,7 +1537,6 @@ main {
     .nextVideos .tape .additionalInfo p{
         font-size: 13px;
     }
-
 
 }
 
