@@ -289,7 +289,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 89vw;
-    height: 363px;
+    height: 370px;
     color: #19202C;
     font-size: 26px;
     font-family: 'Mulish', sans-serif;
@@ -1149,7 +1149,21 @@ main {
     .chanelLineContent .arrows {
         display: none;
     }
+    .recommendedLineContent .tape img{
+        width: 250px;
+        height: 150px;
+    }
+    .recommendedLineContent .tape{
+        gap:30px;
+        margin-top: 20px;
+    }
+    .recommendedLineContent{
+        height: 283px;
 
+    }
+    .recommendedLineContent .timeline {
+        left: 190px;
+    }
     .channelInfo .headerInfo{
         display: flex;
         position: relative;
